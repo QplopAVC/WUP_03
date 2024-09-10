@@ -18,22 +18,19 @@ davisdata <- read.csv(file="UCDavis.csv")
 ## you choose to sit in??
 
 ## Now with ggplot - first select the basic data
-
 ```{r}
-basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
+basicCN <- ggplot(ucdavis1,aes(x=Seat,y=alcohol))
 ```
 ## Now add in boxplot
-
 ```{r}
 basicCN + geom_boxplot()
 ```
-  
+
+The outliers in the "back" category is more than half than those in the "front". The median of the "back" category is higher than that of the "front". There is also a lot of outliers in the middle row.
   
 ### get fancy  
 
-```{r}
-basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
-```
+
 
 ## Numerical Summarys 
 
