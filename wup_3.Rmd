@@ -48,7 +48,7 @@ model1 <- aov(alcohol~Seat,data=davisdata)
 summary.aov(model1)
 ```
 
-The probability value is 0.000116. It is so small to get these results that something is going on in the different groups. We need to do more tests for mor detailed results.
+The probability value is 0.000116. It is so small to get these results that something is going on in the different groups. We need to do more tests for more detailed results.
 
 ```{r}
 plot(TukeyHSD(model1))
@@ -59,4 +59,4 @@ There is no significant difference for the "middle" category and the "front" so 
 
 ## Conclusions
 
-
+First I grabbed my ggplot code so I can run it after getting my table. I then grabbed another piece of code from the helper files to read that code and turn it into a boxplot. After I grabbed the numerical code to see the results including average. We then investigated the probability value in the t.test for inferential results. There we saw the probability was between 0-1 so we ran the one way anova since there were more than two things to compare. I grabbed the turkey test to show the differences in the mean of the "seats". There we concluded that "back" has more "alcohol" than the rest.
