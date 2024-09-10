@@ -43,6 +43,16 @@ favstats(alcohol~Seat,data=davisdata)
 There about the same amount of people in the "Front" and "Back" categories. The "middle" has over the amount of both "front" and "back" combined. The "back" has a higher mean average than the "front" and "middle". The standard deviation of the "back" category is also substantially higher than the others.
 
 ## Inferential Tests
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The probability value is 0.000116. It is so small to get these results that something is going on in the different groups. We need to do more tests for mor detailed results.
+
+
+
+
 
 ## Conclusions
 
