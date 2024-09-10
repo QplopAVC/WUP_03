@@ -29,8 +29,11 @@ basicCN + geom_boxplot()
 The outliers in the "back" category is more than half than those in the "front". The median of the "back" category is higher than that of the "front". There is also a lot of outliers in the middle row.
   
 ### get fancy  
+```{r}
+basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='errorbar') + labs(title="Fancy notch boxplot \n with 2 lines")
+```
 
-
+This plot makes it easier to distinguish the medians of the "back" category and "front" category.
 
 ## Numerical Summarys 
 
