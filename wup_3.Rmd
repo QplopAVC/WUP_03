@@ -36,6 +36,11 @@ basicCN + geom_boxplot(notch=TRUE,outlier.color = "red") + stat_boxplot(geom ='e
 This plot makes it easier to distinguish the medians of the "back" category and "front" category.
 
 ## Numerical Summarys 
+```{r}
+favstats(alcohol~Seat,data=davisdata)
+```
+
+There about the same amount of people in the "Front" and "Back" categories. The "middle" has over the amount of both "front" and "back" combined. The "back" has a higher mean average than the "front" and "middle". The standard deviation of the "back" category is also substantially higher than the others.
 
 ## Inferential Tests
 
