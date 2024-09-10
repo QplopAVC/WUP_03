@@ -50,8 +50,11 @@ summary.aov(model1)
 
 The probability value is 0.000116. It is so small to get these results that something is going on in the different groups. We need to do more tests for mor detailed results.
 
+```{r}
+plot(TukeyHSD(model1))
+```
 
-
+There is no significant difference for the "middle" category and the "front" so they are not different because 0 is a confidence. The "front" and "back" are different. The "middle" and "back" are different. What is important is that "back" is different from both.
 
 
 ## Conclusions
